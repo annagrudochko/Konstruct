@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.conteiner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+.about {
+}
+.about-h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.31px;
+    text-align: center;
+    color: #48555B;
+}
+.about-h2::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0;
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.about-flex-left {
+    
+}
+.about-flex-left-h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #48555B;
+    max-width: 406px;
+    letter-spacing: 0.01em;
+}
+.color-text {
+    color: #00A4E5;
+}
+.about-flex-left-p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+    max-width: 406px;
+}
+.about-flex-right {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+.about-flex-right-item {
+    line-height: 29;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 140px;
+    height: 224px;
+    padding: 15px;
+}
+.about-flex-right-item:nth-child(1) {
+    background-image: url(../img/we_plan.png);
+}
+.about-flex-right-item:nth-child(2) {
+    background-image: url(../img/we_manage.png);
+}
+.about-flex-right-item:nth-child(3) {
+    background-image: url(../img/we_build.png);
+}
+
+@media screen and (max-width: 1440px) {
+    .conteiner {
+        padding: 0 50px;
+    }
+    .about-flex {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .conteiner {
+        padding: 0 15px;
+    }
+    .about-flex {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 500px) {
+    .about-flex-right {
+        flex-wrap: wrap;
+    }
+}
