@@ -121,6 +121,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: right;
     }
 }
 
